@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
         element: <LayoutAuth />,
         children: [
             {
-                path: "/authentication/login/minimal",
+                path: "login",
                 element: <LoginMinimal />
             }
         ]

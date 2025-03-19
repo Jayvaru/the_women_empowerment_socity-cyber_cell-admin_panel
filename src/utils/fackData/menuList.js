@@ -40,19 +40,5 @@ export const menuList = [
                 subdropdownMenu: false
             }
         ]
-    },
-    {
-        id: 10,
-        name: "authentication",
-        path: "#",
-        icon: 'feather-power',
-        dropdownMenu: [
-            {
-                id: 1,
-                name: "login",
-                path: "/authentication/login/minimal",
-                subdropdownMenu: false
-            },
-        ]
     }
 ]

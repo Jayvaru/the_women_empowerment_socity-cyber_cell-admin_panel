@@ -9,15 +9,19 @@ import "react-datetime/css/react-datetime.css";
 import NavigationProvider from './contentApi/navigationProvider';
 import SideBarToggleProvider from './contentApi/sideBarToggleProvider';
 import ThemeCustomizer from './components/shared/ThemeCustomizer';
+import { CookiesProvider } from 'react-cookie';
 
 const App = () => {
+
   return (
     <>
-      <NavigationProvider>
-        <SideBarToggleProvider>
-          <RouterProvider router={router} />
-        </SideBarToggleProvider>
-      </NavigationProvider>
+      <CookiesProvider>
+        <NavigationProvider>
+          <SideBarToggleProvider>
+            <RouterProvider router={router} />:
+          </SideBarToggleProvider>
+        </NavigationProvider>
+      </CookiesProvider>
     </>
   )
 }

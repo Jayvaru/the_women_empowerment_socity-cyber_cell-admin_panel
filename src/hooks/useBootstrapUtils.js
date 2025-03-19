@@ -13,16 +13,7 @@ const useBootstrapUtils = (pathName) => {
         const handleResize = () => {
             const newWindowWidth = window.innerWidth;
             if (newWindowWidth >= 1400) {
-                document.querySelectorAll(".dropdown").forEach((e) => {
-                    e.addEventListener("mouseover", () => {
-                        e.querySelector(".dropdown-menu").classList.add("show")
-
-                    })
-                    e.addEventListener("mouseleave", () => {
-                        e.querySelector(".dropdown-menu").classList.remove("show")
-
-                    })
-                })
+                
             }
         }
 
